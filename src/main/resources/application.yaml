@@ -1,0 +1,19 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+name: "Development Environment"
+server:
+  port: 8080
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: testing
+name: "Testing"
+server:
+  port: 8000
+
+
