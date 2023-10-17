@@ -2,6 +2,7 @@ spring:
   config:
     activate:
       on-profile: dev
+  thymeleaf:
 name: "Development Environment"
 server:
   port: 8080
