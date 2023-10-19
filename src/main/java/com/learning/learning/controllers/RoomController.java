@@ -14,7 +14,6 @@ import java.util.List;
 @RequestMapping("/rooms")
 public class RoomController {
     private RoomService roomService;
-    @Autowired
     public RoomController(RoomService roomService){
         this.roomService = roomService;
     }

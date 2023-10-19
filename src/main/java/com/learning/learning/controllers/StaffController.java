@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class StaffController {
     private StaffMemberService staffMemberService;
 
-    @Autowired
     public StaffController(StaffMemberService staffMemberService) {
 
         this.staffMemberService = staffMemberService;
