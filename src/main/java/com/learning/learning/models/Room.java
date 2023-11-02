@@ -1,17 +1,31 @@
 package com.learning.learning.models;
 
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "rooms")
 public class Room {
+    @Id
+    @Column(name = "room_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    @Column(name = "room_number")
     private String number;
+    @Column(name = "room_name")
     private String name;
+    @Column(name = "room_info")
     private String info;
 
     public Room(long id, String name, String number, String info) {
         this.id = id;
         this.name = name;
         this.number = number;
-
         this.info = info;
+    }
+
+    public Room() {
+
     }
 
     public long getId() {
